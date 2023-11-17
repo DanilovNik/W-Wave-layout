@@ -1,0 +1,274 @@
+.footer {
+  padding-top: 89px;
+  padding-bottom: 10px;
+  background-color: var(--charade);
+  position: relative;
+}
+
+.footer__top {
+  padding-top: 4px;
+  padding-bottom: 83px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__top-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer__top-img {
+  margin-bottom: 20px;
+}
+
+.footer__top-social-list {
+  display: flex;
+}
+
+.footer__top-social-item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.footer__top-social-link svg {
+  fill: var(--mischka);
+  transition: .3s ease-in-out, .3s ease-in-out;
+}
+
+.footer__top-social-link:hover svg {
+  fill: var(--electric-violet);
+}
+
+.footer__top-social-link:focus {
+  outline: none;
+}
+
+.footer__top-social-link:focus svg {
+  fill: var(--melrose);
+}
+
+.footer__top-social-link:active svg {
+  fill: var(--active-color);
+}
+
+.footer__top-right {
+  max-width: 447px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer__nav {
+  width: 100%;
+}
+
+.footer__nav-list {
+  width: 100%;
+  height: 100px;
+  column-count: 3;
+  column-gap: 122px;
+}
+
+.footer__nav-item {
+  width: 86px;
+}
+
+.footer__nav-item:not(:nth-child(3n)) {
+  margin-bottom: 18px;
+}
+
+.footer__nav-link {
+  transition: .3s ease-in-out, .3s ease-in-out;
+}
+
+.footer__nav-link:hover {
+  color: var(--electric-violet);
+}
+
+.footer__nav-link:focus {
+  outline: none;
+  color: var(--melrose);
+}
+
+.footer__nav-link:active {
+  color: var(--active-color);
+}
+
+/* Решение через flex / calc */
+
+/* .footer__nav-list {
+  width: 100%;
+  height: 104px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.footer__nav-item {
+  flex: 0 0 calc(100% / 3 - 3px);
+}
+
+.footer__nav-item:not(:nth-last-child(-n + 3)) {
+  margin-right: 109px;
+}
+
+.footer__nav-item:not(:nth-child(3n)) {
+  margin-bottom: 4px;
+} */
+
+.footer__nav-link {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.footer__wave-logo {
+  width: 100%;
+  position: absolute;
+  bottom: 26;
+  left: 0;
+  max-width: 1920px;
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  margin-top: 21px;
+}
+
+.footer__copy {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 103.336%;
+  color: var(--grey);
+}
+
+/* Adaptive */
+
+@media (max-width: calc(1200px - 1px)) {
+  .footer {
+    padding-top: 92px;
+  }
+}
+
+@media (max-width: calc(1024px - 1px)) {
+  .footer__top {
+    padding-top: 4px;
+    padding-bottom: 54px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__top-left {
+    margin-bottom: 74px;
+  }
+
+  .footer__top-social-list {
+    align-items: flex-start;
+  }
+
+  .footer__top-social-item:not(:last-child) {
+    margin-right: 24px;
+  }
+
+  .footer__top-social-link svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer__top-right {
+    max-width: 545px;
+  }
+
+  .footer__nav-list {
+    width: 100%;
+    height: 135px;
+    column-count: 3;
+    column-gap: 167px;
+  }
+
+  .footer__nav-item {
+    width: 86px;
+  }
+
+  .footer__nav-item:not(:nth-child(3n)) {
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 580px) {
+  .footer__nav-list {
+    column-gap: 80px;
+  }
+}
+
+@media (max-width: 430px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+
+  .footer__container {
+    padding: 0;
+  }
+
+  .footer__top {
+    padding-bottom: 0;
+    display: block;
+  }
+
+  .footer__top-left {
+    align-items: center;
+    margin-bottom: 48px;
+  }
+
+  .footer__top-right {
+    width: 100%;
+    padding: 25px 0 0 0;
+    align-items: flex-end;
+    background-color: var(--mirage);
+    align-items: center;
+  }
+
+  .footer__nav {
+    width: 100%;
+    padding: 0 2px 0px 32px;
+  }
+
+  .footer__nav-list {
+    width: 100%;
+    min-height: 190px;
+    column-count: 2;
+    column-gap: 0;
+  }
+
+  .footer__nav-item {
+    width: 86px;
+  }
+
+  .footer__nav-item:not(:nth-child(5n)) {
+    margin-bottom: 18px;
+  }
+
+
+  .footer__nav-link {
+    font-size: 12px;
+    font-weight: 400;
+  }
+
+  .footer__wave-logo {
+    bottom: 30px;
+  }
+
+  .footer__bottom {
+    padding-top: 30px;
+    padding-bottom: 12px;
+    margin-top: 0;
+  }
+
+  .footer__copy {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 103.336%;
+  }
+}
+

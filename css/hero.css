@@ -1,0 +1,135 @@
+.hero {
+  padding-top: 19px;
+  padding-bottom: 35px;
+}
+
+.hero__content {
+  display: flex;
+}
+
+.hero__left {
+  padding-top: 62px;
+  margin-right: auto;
+}
+
+.hero__header {
+  margin-bottom: 8px;
+}
+
+.hero__header-bold {
+  margin-right: 7px;
+  font-size: 60px;
+  font-weight: 700;
+  color: var(--mirage);
+}
+
+.hero__header-italic {
+  font-family: 'MullerLightItalic';
+  font-size: 60px;
+  font-weight: 400;
+  color: var(--mirage);
+}
+
+.hero__descr {
+  margin-bottom: 45px;
+  max-width: 635px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.hero__btn {
+  height: 70px;
+  padding: 0 55px;
+  background-color: var(--electric-violet);
+  font-family: Muller;
+  font-size: 20px;
+  font-weight: 500;
+  transition: .3s ease-in-out, color .3s ease-in-out;
+}
+
+.hero__btn:hover {
+  background-color: var(--melrose);
+}
+
+.hero__btn:focus {
+  outline:  2px solid var(--electric-violet);
+  background-color: var(--melrose);
+}
+
+.hero__btn:active {
+  outline: none;
+  background-color: var(--active-color);
+}
+
+/* Adaptive */
+
+@media (max-width: calc(1200px - 1px)) {
+  .hero {
+    padding-top: 51px;
+    padding-bottom: 78px;
+  }
+
+  .hero__left {
+    padding: 0;
+  }
+
+  .hero__descr {
+    max-width: 539px;
+    margin-bottom: 21px;
+  }
+}
+
+@media (max-width: calc(1024px - 1px)) {
+  .hero {
+    padding-bottom: 90px;
+  }
+
+  .hero__header-bold {
+    margin-right: 7px;
+  }
+
+  .hero__img {
+    display: none;
+  }
+}
+
+@media (max-width: calc(768px - 1px)) {
+  .hero {
+    padding: 0;
+    padding-bottom: 40px;
+  }
+
+  .hero__container {
+    padding: 0 32px;
+  }
+
+  .hero__header {
+    margin-bottom: 4px;
+  }
+
+  .hero__header-bold {
+    margin-right: 0;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 100%;
+  }
+
+  .hero__header-italic {
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .hero__descr {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .hero__btn {
+    height: 49px;
+    padding: 0 46px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
