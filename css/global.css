@@ -4,12 +4,6 @@
   padding: 0;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 body {
   font-family: 'Muller', sans-serif;
 }
@@ -42,13 +36,13 @@ a {
 
 @media (max-width: calc(1200px - 1px)) {
   .container {
-    max-width: 824px;
+    max-width: 854px;
   }
 }
 
 @media (max-width: calc(1024px - 1px)) {
   .container {
-    max-width: 540px;
+    max-width: 568px;
   }
 }
 

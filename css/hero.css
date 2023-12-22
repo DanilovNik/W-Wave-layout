@@ -62,6 +62,14 @@
   background-color: var(--active-color);
 }
 
+.hero__img {
+  transition: .4s ease-in;
+}
+
+.hero__img:hover {
+  transform: scale(1.05);
+}
+
 /* Adaptive */
 
 @media (max-width: calc(1200px - 1px)) {
