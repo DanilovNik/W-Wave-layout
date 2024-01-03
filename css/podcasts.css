@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .podcasts {
   padding-top: 92px;
   padding-bottom: 92px;
@@ -12,15 +19,22 @@
 }
 
 .podcasts__content-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 28px;
 }
 
 .podcasts__content-item {
   max-width: 526px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
+  -webkit-box-shadow: .6em 0 .4em var(--grey);
+          box-shadow: .6em 0 .4em var(--grey);
 }
 
 .podcasts__content-img {
@@ -28,11 +42,11 @@
 }
 
 .podcasts__content-date {
-  height: 11px;
-  padding: 3px 6px 3px 10px;
+  height: 17px;
+  padding: 4px 5px 4px 9px;
   position: absolute;
   z-index: 1;
-  bottom: 0px;
+  bottom: 0;
   left: -1px;
   font-size: 10px;
   font-weight: 400;
@@ -41,10 +55,17 @@
 
 .podcasts__content-inner {
   width: 428px;
-  padding: 42px 30px 40px 31px;
+  padding: 42px 30px 37px 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   background-color: var(--white);
 }
 
@@ -88,7 +109,10 @@
 @media (max-width: calc(1024px - 1px)) {
   .podcasts__content-list {
     width: 100%;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 28px;
   }
 
@@ -101,7 +125,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 380px) {
   .podcasts {
     padding-top: 54px;
     padding-bottom: 53px;
@@ -118,8 +142,15 @@
   }
 
   .podcasts__content-item {
-    max-width: 211px;
-    flex-direction: column;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .podcasts__content-img {
+    width: 100%;
   }
 
   .podcasts__content-date {

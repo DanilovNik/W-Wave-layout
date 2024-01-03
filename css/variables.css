@@ -1,21 +1,21 @@
 :root {
   --white: #fff;
   --black: #000;
-  --grey: #A1A6B4;
-  --electic-blue: #0039A6;
-  --electric-violet: #6D31EE;
-  --electric-red: #D52B1E;
+  --grey: #a1a6b4;
+  --electic-blue: #0039a6;
+  --electric-violet: #6d31ee;
+  --electric-red: #d52b1e;
 
-  --active-color: #4F28A5;
+  --active-color: #4f28a5;
 
   --mirage: #121723;
-  --charade: #292E39;
-  --mischka: #D2D5DD;
-  --athens-gray: #E6E8EC;
-  --tussock: #BB973E;
-  --buff: #F0D288;
-  --melrose: #AA9DFA;
-  --porcelain: #F5F6F7;
+  --charade: #292e39;
+  --mischka: #d2d5dd;
+  --athens-gray: #e6e8ec;
+  --tussock: #bb973e;
+  --buff: #f0d288;
+  --melrose: #aa9dfa;
+  --porcelain: #f5f6f7;
 
   --gap: 30px;
 }

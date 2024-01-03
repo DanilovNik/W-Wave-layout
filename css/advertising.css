@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .advertising {
   padding-top: 94px;
   padding-bottom: 133px;
@@ -6,6 +13,8 @@
 
 .advertising__content {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: var(--gap);
 }
@@ -20,9 +29,16 @@
 
 .advertising__right {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .advertising__right-header {
@@ -63,8 +79,12 @@
 }
 
 .advertising__right-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 65px;
   padding: 0 13px;
   font-size: 20px;
@@ -72,6 +92,8 @@
   color: var(--buff);
   border-radius: 100px;
   border: 2px solid var(--buff);
+  -webkit-transition: .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: .3s ease-in-out, color .3s ease-in-out;
   transition: .3s ease-in-out, color .3s ease-in-out;
 }
 
@@ -97,16 +119,22 @@
   margin-right: 7px;
   width: 20px;
   height: 20px;
+  -webkit-transition: .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: .3s ease-in-out, color .3s ease-in-out;
   transition: .3s ease-in-out, color .3s ease-in-out;
 }
 
 #advertising__right-btn--round {
   fill: var(--buff);
+  -webkit-transition: .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: .3s ease-in-out, color .3s ease-in-out;
   transition: .3s ease-in-out, color .3s ease-in-out;
 }
 
 #advertising__right-btn--flash {
   fill: var(--mirage);
+  -webkit-transition: .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: .3s ease-in-out, color .3s ease-in-out;
   transition: .3s ease-in-out, color .3s ease-in-out;
 }
 
@@ -180,7 +208,10 @@
   }
 
   .advertising__content {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .advertising__right {
@@ -193,6 +224,10 @@
 
   .advertising__right-header {
     width: 70%;
+  }
+
+  .advertising__right-img {
+    width: 100%;
   }
 
   .advertising__right-descr-1 {
@@ -247,8 +282,12 @@
   }
 
   .advertising__right-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 46px;
     padding: 0 15px;
     font-size: 16px;

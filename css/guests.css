@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .guests {
   padding-top: 92px;
   padding-bottom: 89px;
@@ -30,13 +37,20 @@
 }
 
 .guests__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 44px;
 }
 
 .guests__list-item {
   min-height: 272px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: var(--gap)
 }
@@ -50,10 +64,19 @@
 
 .guests__list-wrapper {
   padding-bottom: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .guests__list-descr {
@@ -70,6 +93,8 @@
   border-radius: 77px;
   border: 2px solid var(--melrose);
   color: var(--melrose);
+  -webkit-transition: .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: .3s ease-in-out, color .3s ease-in-out;
   transition: .3s ease-in-out, color .3s ease-in-out;
 }
 
@@ -110,14 +135,22 @@
   }
 
   .guests__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 45px;
   }
 
   .guests__list-item {
     min-height: 645px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 24px;
   }
 

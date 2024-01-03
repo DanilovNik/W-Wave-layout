@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .footer {
   padding-top: 89px;
   padding-bottom: 10px;
@@ -8,14 +15,25 @@
 .footer__top {
   padding-top: 4px;
   padding-bottom: 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer__top-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .footer__top-img {
@@ -23,6 +41,8 @@
 }
 
 .footer__top-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -32,6 +52,8 @@
 
 .footer__top-social-link svg {
   fill: var(--mischka);
+  -webkit-transition: .3s ease-in-out, .3s ease-in-out;
+  -o-transition: .3s ease-in-out, .3s ease-in-out;
   transition: .3s ease-in-out, .3s ease-in-out;
 }
 
@@ -53,8 +75,12 @@
 
 .footer__top-right {
   max-width: 447px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .footer__nav {
@@ -64,8 +90,12 @@
 .footer__nav-list {
   width: 100%;
   height: 100px;
-  column-count: 3;
-  column-gap: 122px;
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 122px;
+     -moz-column-gap: 122px;
+          column-gap: 122px;
 }
 
 .footer__nav-item {
@@ -77,6 +107,8 @@
 }
 
 .footer__nav-link {
+  -webkit-transition: .3s ease-in-out, .3s ease-in-out;
+  -o-transition: .3s ease-in-out, .3s ease-in-out;
   transition: .3s ease-in-out, .3s ease-in-out;
 }
 
@@ -130,8 +162,12 @@
 }
 
 .footer__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 21px;
 }
 
@@ -154,8 +190,13 @@
   .footer__top {
     padding-top: 4px;
     padding-bottom: 54px;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .footer__top-left {
@@ -163,7 +204,9 @@
   }
 
   .footer__top-social-list {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 
   .footer__top-social-item:not(:last-child) {
@@ -182,8 +225,12 @@
   .footer__nav-list {
     width: 100%;
     height: 135px;
-    column-count: 3;
-    column-gap: 167px;
+    -webkit-column-count: 3;
+       -moz-column-count: 3;
+            column-count: 3;
+    -webkit-column-gap: 167px;
+       -moz-column-gap: 167px;
+            column-gap: 167px;
   }
 
   .footer__nav-item {
@@ -197,7 +244,9 @@
 
 @media (max-width: 580px) {
   .footer__nav-list {
-    column-gap: 80px;
+    -webkit-column-gap: 80px;
+       -moz-column-gap: 80px;
+            column-gap: 80px;
   }
 }
 
@@ -217,16 +266,22 @@
   }
 
   .footer__top-left {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 48px;
   }
 
   .footer__top-right {
     width: 100%;
     padding: 25px 0 0 0;
-    align-items: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     background-color: var(--mirage);
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .footer__nav {
@@ -237,8 +292,12 @@
   .footer__nav-list {
     width: 100%;
     min-height: 190px;
-    column-count: 2;
-    column-gap: 0;
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
   }
 
   .footer__nav-item {

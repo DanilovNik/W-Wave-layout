@@ -1,9 +1,18 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 .hero {
   padding-top: 19px;
   padding-bottom: 35px;
 }
 
 .hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -45,6 +54,8 @@
   font-family: Muller;
   font-size: 20px;
   font-weight: 500;
+  -webkit-transition: .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: .3s ease-in-out, color .3s ease-in-out;
   transition: .3s ease-in-out, color .3s ease-in-out;
 }
 
@@ -60,14 +71,6 @@
 .hero__btn:active {
   outline: none;
   background-color: var(--active-color);
-}
-
-.hero__img {
-  transition: .4s ease-in;
-}
-
-.hero__img:hover {
-  transform: scale(1.05);
 }
 
 /* Adaptive */
